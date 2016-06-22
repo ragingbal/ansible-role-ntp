@@ -36,8 +36,15 @@ them are as follows. See the NTP configuration documentation for details:
 	ntp_broadcastclient: no
 	ntp_multicastclient: no
 
-Examples
---------
+
+
+Dependencies
+------------
+
+None
+
+Example Playbook
+----------------
 
 1) Install ntp and set the default settings.
 
@@ -51,20 +58,6 @@ Examples
 	  roles:
 	    - role: ntp
 	      ntp_server: [2.ubuntu.pool.ntp.org, 1.ubuntu.pool.ntp.org]
-
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
-
-Example Playbook
-----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
 
 License
 -------
